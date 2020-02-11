@@ -45,6 +45,6 @@ public interface Point extends Shape{
      *
      * @see <a href="https://ru.wikipedia.org/wiki/%D0%9E%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%82%D0%B0">Ордината</a>
      */
-    float getY1();
+    float getY();
 
 }
