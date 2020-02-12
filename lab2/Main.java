@@ -26,11 +26,11 @@ public class Main {
 
         shapes[0] = new Circle(8, 5, 7);
         shapes[1] = new Circle(4, 1, 4);
-        shapes[2] = new Circle(9, 1, 1);
+        shapes[2] = new Circle(9, 1, 18);
 
         shapes[3] = new Rectangle(3, 7, 4, 3);
         shapes[4] = new Rectangle(5, 4, 5, 3);
-        shapes[5] = new Rectangle(1, 4, 3, 2);
+        shapes[5] = new Rectangle(1, 2, 3, 2);
         shapes[6] = new Rectangle(5, 7, 2, 6);
 
         shapes[7] = new Triangle(5, 7, 9, 12, 12, 8);
