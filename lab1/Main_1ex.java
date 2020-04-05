@@ -5,15 +5,14 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main_1ex {
-
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         Scanner in = new Scanner(System.in);
 
-        int start = (int) Math.ceil(in.nextDouble());
+        int start = ++Math.round(in.nextInt());
         int finish = Math.round(in.nextInt());
-        int currentNumber, dividers;
 
+        int currentNumber, dividers;
         for (currentNumber = start; currentNumber < finish; currentNumber++) {
             dividers = 0;
             for (int i = 1; i <= currentNumber; i++) {
@@ -26,7 +25,3 @@ public class Main_1ex {
         System.out.println(list.toString());
     }
 }
-
-
-
-
