@@ -53,6 +53,8 @@ public interface Shape {
         return 0;
     }
 
+    default void rotate(int angle) {}
+
     /*
      * TODO: изменить определение метотода 'getRotation()'
      * Измените определение метода таким образом, чтобы

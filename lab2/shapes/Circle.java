@@ -1,5 +1,6 @@
 package shapes;
 
+<<<<<<< HEAD
 public class Circle implements Point, Ellipse {
     private float x, y, r;
 
@@ -29,4 +30,30 @@ public class Circle implements Point, Ellipse {
     public float getLengthEllipe() {
         return (float) (Math.PI * (2 * r));
     }
+=======
+import point.Point;
+
+public class Circle implements Ellipse {
+  private Point center;
+  private float radius;
+
+  public Circle(Point point, float radius) {
+    this.center = point;
+    this.radius = radius;
+  }
+
+  public Point getCenter() {
+    return center;
+  }
+
+  @Override
+  public float getArea() {
+    return (float) (Math.PI * Math.pow(radius, 2));
+  }
+
+  @Override
+  public float getLengthEllipe() {
+    return (float) (Math.PI * (2 * radius));
+  }
+>>>>>>> 0aa741eef0a7b9c4a53016871ac7bf48c7178727
 }
