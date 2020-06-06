@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="364.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="titleField" layoutX="66.0" layoutY="40.0" AnchorPane.leftAnchor="66.0" />
+      <Label layoutX="31.0" layoutY="45.0" text="Title:" AnchorPane.leftAnchor="30.0" />
+      <TextField fx:id="costField" layoutX="66.0" layoutY="75.0" AnchorPane.leftAnchor="66.0" />
+      <Label layoutX="30.0" layoutY="80.0" text="Cost:" AnchorPane.leftAnchor="30.0" />
+      <ScrollPane layoutX="20.0" layoutY="143.0" AnchorPane.leftAnchor="20.0">
+         <content>
+            <ListView fx:id="productList" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </ScrollPane>
+      <SplitMenuButton fx:id="executeButton" layoutX="243.0" layoutY="62.0" mnemonicParsing="false" text="Execute" AnchorPane.leftAnchor="241.5" AnchorPane.rightAnchor="30.0">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#addButtonAction" text="Add" />
+          <MenuItem mnemonicParsing="false" onAction="#removeButtonAction" text="Remove" />
+            <MenuItem mnemonicParsing="false" onAction="#changeCostButtonAction" text="Change Cost" />
+            <MenuItem mnemonicParsing="false" onAction="#showPriceButtonAction" text="Show Price" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton fx:id="showButton" layoutX="243.0" layoutY="223.0" mnemonicParsing="false" text="Show" AnchorPane.leftAnchor="241.5" AnchorPane.rightAnchor="30.0">
+         <items>
+            <MenuItem fx:id="showAllButtonAction" mnemonicParsing="false" onAction="#showAllButtonAction" text="Show All" />
+            <MenuItem fx:id="showByCostButtonAction" mnemonicParsing="false" onAction="#showByCostButtonAction" text="Show By Cost" />
+         </items>
+      </SplitMenuButton>
+      <Label layoutX="174.0" layoutY="14.0" text="Lab 5" />
+   </children>
+</AnchorPane>

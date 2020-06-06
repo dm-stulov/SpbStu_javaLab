@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="155.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="27.0" layoutY="37.0" text="Lowest prise:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+      <Label layoutX="27.0" layoutY="74.0" text="Highest price:" AnchorPane.leftAnchor="30.0" />
+      <TextField fx:id="lowCostField" layoutX="125.0" layoutY="32.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0" />
+      <TextField fx:id="highCostField" layoutX="125.0" layoutY="69.0" AnchorPane.rightAnchor="30.0" />
+      <Button layoutX="72.0" layoutY="118.0" mnemonicParsing="false" onAction="#executeButtonAction" text="Execute" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="80.0" />
+      <Button layoutX="178.0" layoutY="118.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="80.0" />
+   </children>
+</AnchorPane>
